@@ -1,0 +1,142 @@
+<h3 class="text-center text-success">
+  article
+</h3>
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-md-8">
+
+
+      <form role="form">
+        <div class="row">
+          <div class="col-md-6">
+
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                <h4>Article</h4>
+              </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter code article">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                <h4>Designation</h4>
+              </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Entrer la designation ">
+            </div>
+            <!-- /.form-group -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                <h4>Prix HT</h4>
+              </label>
+              <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter le Prix HT">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                <h4>Taux TVA</h4>
+              </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="TVA">
+            </div>
+
+            <!-- /.form-group -->
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+
+        </div>
+      </form>
+      <!-- /.row -->
+
+
+    </div>
+
+
+
+
+    <!--
+            <form role="form">
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1" > <h4>Article</h4> </label>
+                  <input type="text"  class="form-control" id="exampleInputEmail1" placeholder="Enter code article">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" > <h4>Designation</h4></label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder=" entrer la designation ">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" ><h4>Prix HT</h4></label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter le Prix HT">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" ><h4>Taux TVA</h4></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="TVA">
+                  </div>
+
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+          </div>
+
+        -->
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <span class="badge badge-success">Article</span>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Product
+            </th>
+            <th>
+              Quantité
+            </th>
+            <th>
+              code
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let a of articles" class="table-active">
+            <td>
+              {{a.idArticle}}
+            </td>
+            <td>
+              {{a.designation}}
+            </td>
+            <td>
+              {{a.codeArticle}}
+            </td>
+            <td>
+              {{a.prixUnitaireTTC}}
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
